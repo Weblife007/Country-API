@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries API's</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <h1>Where in the world?</h1>
+            <button class="theme-switch" id="theme-switch">
+                
+                    <img  src="img/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg"
+                        alt="dark-mode">
+                    <img  src="img/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg"
+                        alt="light-mode">
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="user-input">
+            <div class="search-input">
+                <img src="img/search.png" class="searchImg">
+                <input type="text" id="search-input" placeholder="Search for a country...">
+            </div>
+
+            <div class="select-input">
+                <select name="filter-input" id="filter-input">
+                    <option value="">Filter By Region</option>
+                    <option value="africa">Africa</option>
+                    <option value="america">America</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="country-list-container" id="country-list-container">
+
+        </div>
+
+        <div class="country-detail-container" id="country-detail-container">
+
+        </div>
+    </main>
+
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
